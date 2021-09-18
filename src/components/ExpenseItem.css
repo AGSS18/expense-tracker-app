@@ -3,15 +3,11 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  padding: 2.5rem;
+  padding: 1.5rem;
   margin: 1rem 0;
   border-radius: 12px;
   background-color: #fff;
-}
-
-.expense-item__date {
-  font-weight: 700;
-  font-size: 1.5rem;
+  height: 10rem;
 }
 
 .expense-item__description {
@@ -32,12 +28,17 @@
 }
 
 .expense-item__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1rem;
   font-weight: bold;
   color: white;
   background-color: #1767b3;
-  padding: 0.5rem;
+  padding: 1.5rem;
   border-radius: 5px;
+  height: 3.5rem;
+  width: 10rem;
 }
 
 @media (min-width: 580px) {
