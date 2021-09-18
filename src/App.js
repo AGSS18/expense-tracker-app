@@ -1,4 +1,4 @@
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 import './index.css';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
     },
     {
       id: 'e4',
-      title: 'New Desk (Wooden)',
+      title: 'New Desk',
       amount: 450.55,
       date: new Date(2021, 5, 12),
     },

@@ -1,12 +1,12 @@
 .expense-date {
   display: flex;
   flex-direction: column;
-  width: 5.5rem;
-  height: 5.8rem;
+  width: 6.5rem;
+  height: 6.5rem;
   border: 1px solid #ececec;
   background-color: #ffbb2a;
   color: white;
-  border-radius: 12px;
+  border-radius: 8px;
   align-items: center;
   justify-content: center;
 }
@@ -24,4 +24,5 @@
 .expense-date__year,
 .expense-date__day {
   font-weight: bold;
+  text-shadow: 1px 0 3px rgba(0, 0, 0, 0.4);
 }
