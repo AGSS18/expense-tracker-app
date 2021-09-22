@@ -7,16 +7,20 @@
   margin-bottom: 1.5rem;
 }
 
+.expense-item,
+.expense-item__actions {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  background-color: rgba(240, 240, 240, 0.522);
+  padding: 0.8rem;
+  width: 95%;
+  height: 10rem;
+}
+
 .expense-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  padding: 0.8rem;
-  border-radius: 12px;
-  background-color: rgba(240, 240, 240, 0.522);
-  width: 95%;
-  height: 10rem;
 }
 
 .expense-item__description {
@@ -53,6 +57,44 @@
 
 .message {
   color: #000;
+}
+
+.expense-item__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-delete,
+.button-cancel {
+  display: inline-block;
+  font: inherit;
+  cursor: pointer;
+  padding: 1.2rem 2rem;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.button-delete {
+  background-color: #bf2323;
+}
+
+.button-cancel {
+  background-color: #ffbb2a;
+  margin-right: 2rem;
+}
+
+.button-cancel:hover,
+.button-cancel:active {
+  background-color: #eead20;
+}
+
+.button-delete:hover,
+.button-delete:active {
+  background-color: #a11818;
 }
 
 @media (min-width: 720px) {

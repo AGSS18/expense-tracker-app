@@ -11,6 +11,10 @@
   justify-content: center;
 }
 
+.expense-date:hover {
+  cursor: pointer;
+}
+
 .expense-date__month,
 .expense-date__year {
   font-size: 1.2rem;

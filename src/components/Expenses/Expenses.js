@@ -25,7 +25,7 @@ function Expenses(props) {
         <div className="expenses">
             <ExpenseFilter onFilter={filterHandler} selected={selectedYear} />
             <ExpensesChart expenses={filteredYearExpenses} />
-            <ExpensesList expenses={filteredYearExpenses} />
+            <ExpensesList expenses={filteredYearExpenses} deleteExpense={props.deleteExpense} />
         </div>
     );
 }

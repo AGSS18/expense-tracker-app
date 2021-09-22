@@ -8,7 +8,7 @@ function ExpenseDate(props) {
     }
 
     return(
-        <div className="expense-date">
+        <div onClick={props.onClick} className="expense-date">
             <div className="expense-date__month">{dates.month}</div>
             <div className="expense-date__day">{dates.day}</div>
             <div className="expense-date__year">{dates.year}</div>

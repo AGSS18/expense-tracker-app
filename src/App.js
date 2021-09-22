@@ -35,10 +35,17 @@ function App() {
     });
   }
   
+  function deleteExpenseHandler(deleteItemId) {
+    setExpenses(prevState => {
+      const updateExpenses = prevState.filter(item => item.id !== deleteItemId);
+      return updateExpenses;
+    });
+  };
+
   return (
     <div className="App container">
       <NewExpense onFormSubmition={addExpenseHandler} />
-      <Expenses expenses={expenses} />
+      <Expenses expenses={expenses} deleteExpense={deleteExpenseHandler} />
     </div>
   );
 }
