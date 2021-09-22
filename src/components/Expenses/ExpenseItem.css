@@ -47,8 +47,12 @@
   padding: 1.5rem;
   border-radius: 5px;
   height: 3.5rem;
-  width: 10rem;
+  width: 10.1rem;
   text-shadow: 1px 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.message {
+  color: #000;
 }
 
 @media (min-width: 720px) {

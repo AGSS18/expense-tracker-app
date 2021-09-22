@@ -30,7 +30,9 @@ function App() {
   ]);
 
   function addExpenseHandler(expenseData) {
-    setExpenses([...expenses, expenseData])
+    setExpenses((prevState) => {
+      return [...prevState, expenseData];
+    });
   }
   
   console.log(expenses);
