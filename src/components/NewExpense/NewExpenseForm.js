@@ -16,7 +16,7 @@ function NewExpenseForm(props) {
     }
 
     function amountChangeHandler(event) {
-        setInfo({...info, amount: event.target.value});
+        setInfo({...info, amount: +event.target.value});
         
     }
 
