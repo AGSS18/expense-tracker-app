@@ -7,25 +7,9 @@ function App() {
   const [expenses, setExpenses] = useState([
     {
       id: 'e1',
-      title: 'Toilet Paper',
-      amount: 94.12,
-      date: new Date(2020, 7, 14),
-    },
-    { id: 'e2', 
-      title: 'New TV', 
-      amount: 799.49, 
-      date: new Date(2021, 2, 12) },
-    {
-      id: 'e3',
-      title: 'Car Insurance',
-      amount: 294.67,
-      date: new Date(2021, 2, 28),
-    },
-    {
-      id: 'e4',
-      title: 'New Desk',
-      amount: 450.55,
-      date: new Date(2021, 5, 12),
+      title: 'Delete by clicking date',
+      amount: 0.00,
+      date: new Date(2021, 8, 22),
     },
   ]);
 
@@ -46,6 +30,9 @@ function App() {
     <div className="App container">
       <NewExpense onFormSubmition={addExpenseHandler} />
       <Expenses expenses={expenses} deleteExpense={deleteExpenseHandler} />
+      <div className="footer">
+        <p> <a href="https://github.com/AGSS18/expense-tracker-react" target="_blank" rel="noreferrer">Open-source code</a> by Ana Sala</p>
+      </div>
     </div>
   );
 }

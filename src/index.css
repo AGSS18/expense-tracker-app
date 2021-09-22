@@ -58,6 +58,24 @@ h3 {
   color: white;
 }
 
+.footer {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.3rem;
+}
+
+.footer a {
+  color: gray;
+}
+
+.footer a:hover {
+  color: rgb(83, 82, 82);
+}
+
 @media (min-width: 768px) {
   .container {
     width: 50%;
