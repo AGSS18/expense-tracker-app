@@ -35,8 +35,6 @@ function App() {
     });
   }
   
-  console.log(expenses);
-
   return (
     <div className="App container">
       <NewExpense onFormSubmition={addExpenseHandler} />

@@ -7,7 +7,6 @@ function NewExpense(props) {
     const [addNew, setAddNew] = useState(false);
 
     function onFormSubmit(data) {
-        console.log(data)
         const expenseData = {
             ...data, 
             id: Math.random().toString()

@@ -26,9 +26,7 @@ function NewExpenseForm(props) {
         setInputDate("");
         setInfo({title: "", date: "", amount: ""})
     }
-
-    console.log(info)
-
+    
     return(
         <form onSubmit={submitHandler} > 
             <div className="new-expense__controls">
